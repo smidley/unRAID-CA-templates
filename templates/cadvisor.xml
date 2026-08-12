@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>cadvisor</Name>
-  <Repository>gcr.io/cadvisor/cadvisor</Repository>
-  <Registry>https://gcr.io/cadvisor/cadvisor</Registry>
+  <Repository>ghcr.io/google/cadvisor</Repository>
+  <Registry>https://ghcr.io/google/cadvisor</Registry>
   <Network>bridge</Network>
   <Shell>bash</Shell>
   <Privileged>true</Privileged>
   <Support>https://forums.unraid.net/topic/87798-support-selfhostersnets-template-repository/</Support>
   <Project>https://github.com/google/cadvisor</Project>
-  <Changes>https://github.com/google/cadvisor/blob/master/CHANGELOG.md</Changes>
+  <Changes>https://github.com/google/cadvisor/releases</Changes>
   <ExtraSearchTerms>monitoring prometheus</ExtraSearchTerms>
   <Overview>
   cAdvisor (Container Advisor) provides container users an understanding of the resource usage and performance characteristics of their running containers. It is a running daemon that collects, aggregates, processes, and exports information about running containers. Specifically, for each container it keeps resource isolation parameters, historical resource usage, histograms of complete historical resource usage and network statistics. This data is exported by container and machine-wide.

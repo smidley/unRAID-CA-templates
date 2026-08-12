@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>rsshub</Name>
+  <Repository>diygod/rsshub:latest</Repository>
+  <Registry>https://hub.docker.com/r/diygod/rsshub/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/87798-support-selfhostersnets-template-repository/</Support>
+  <Project>https://rsshub.app</Project>
+  <Overview>RSSHub is an open source, easy to use, and extensible RSS feed generator. It is capable of generating RSS feeds from pretty much everything. Everything is RSSible. Supports 700+ websites and services out of the box including Reddit, Twitter/X, GitHub, YouTube, Bilibili, and many more.</Overview>
+  <Category>Network:Web Tools:Utilities</Category>
+  <WebUI>http://[IP]:[PORT:1200]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/selfhosters/unRAID-CA-templates/master/templates/img/rsshub.png</Icon>
+  <ExtraSearchTerms>rss feed generator atom podcast</ExtraSearchTerms>
+  <Config Name="Port" Target="1200" Default="1200" Mode="tcp" Description="RSSHub web and API port" Type="Port" Display="always-hide" Required="true" Mask="false">1200</Config>
+  <Config Name="CACHE_EXPIRE" Target="CACHE_EXPIRE" Default="300" Description="Cache expiry in seconds (default 300)" Type="Variable" Display="advanced-hide" Required="true" Mask="false">300</Config>
+  <Config Name="CACHE_TYPE" Target="CACHE_TYPE" Default="memory|redis" Description="Cache type: memory or redis" Type="Variable" Display="advanced-hide" Required="true" Mask="false"/>
+  <Config Name="NODE_ENV" Target="NODE_ENV" Default="production" Description="Node environment" Type="Variable" Display="advanced-hide" Required="true" Mask="false">production</Config>
+</Container>
